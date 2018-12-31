@@ -9,7 +9,10 @@
                             <div class="content">
                                 <a class="header" >Name : <%= blog.name %></a>
                                 <div class="meta">
-                                        <span><%= blog.created.toDateString()%></span>
+                                        <span><%= blog.created.toDateString() %></span>
+                                </div>
+                                <div class="meta">
+                                <span><%= blog.created.toLocaleTimeString() %></span>
                                 </div>
                                 <div> 
                                        <p> D.O.B : <%=  moment(blog.bday).format( 'MMM-DD-YYYY')  %></p>
